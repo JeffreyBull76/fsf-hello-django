@@ -13,7 +13,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 from pathlib import Path
 import os
 import dj_database_url
-
+import env
 
 if os.path.isfile("env.py"):
     import env
@@ -32,7 +32,7 @@ SECRET_KEY = 'django-insecure-rvy3aq5-7y#439x2aga63p#+2+r77x12_=ae!yb(tzrwl^8_0@
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['fsf-hello-django-todo.herokuapp.com/']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
